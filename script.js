@@ -15,6 +15,8 @@ const mailList = document.querySelector('ul');
 const loader = document.querySelector('.loader');
 const error = document.querySelector('.message-error');
 
+btn.addEventListener('click', genMails) //step 2
+
 /*dati*/
 const endpoint = 'https://flynn.boolean.careers/exercises/api/random/mail'
 const cap = 10;
@@ -22,7 +24,7 @@ let emails=[];
 
 init(); //step 1
 
-btn.addEventListener('click', genMails) //step 2
+
 
 
 

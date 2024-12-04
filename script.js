@@ -51,3 +51,15 @@ function genMails(){
         }) 
     }
 }
+
+// step 5
+function printEmail(){
+    loader.classList.add('d-none');
+    mailList.classList.remove('d-none');
+    emails.forEach(element => mailList.innerHTML += `<li class="list-group-item">${element}</li>`); //step 5
+}
+
+function printError(errorMessage){
+    loader.classList.add('d-none');
+    error.innerHTML = errorMessage;
+}

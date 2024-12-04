@@ -44,7 +44,7 @@ function genMails(){
         axios.get(endpoint)
             .then(res =>{
                 emails.push(res.data.response) //step 3
-                if(emails.length === cap)/*printFunction*/ //step 4 
+                if(emails.length === cap)printEmail() //step 4 
          })
         .catch(e => {
             printError(e.message);
